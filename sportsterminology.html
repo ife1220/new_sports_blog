@@ -1,0 +1,133 @@
+---
+layout: default
+football:
+  - name: kick
+    description:  to kick
+  - name: run
+    description: to run
+  - name: jump
+    description: to jump
+basketball:
+  - name: kickb
+    description:  to kick
+  - name: run
+    description: to rudn
+  - name: jumpj
+    description: to jump
+baseball:
+  - name: pitch
+    description:  to kick
+  - name: run
+    description: to rudn
+  - name: jumpj
+    description: to jump
+tennis:
+  - name: pitch
+    description:  to kick
+  - name: run
+    description: to rudn
+  - name: jumpj
+    description: to jump
+general:
+  - name: pitch
+    description:  to kick
+  - name: run
+    description: to rudn
+  - name: jumpj
+    description: to jump
+other:
+  - name: pitch
+    description:  to kick
+  - name: run
+    description: to rudn
+  - name: jumpj
+    description: to jump
+---
+
+<section class="terms">
+
+  <h3>Football</h3>
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.football %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+    <!--this h4 and p will repeat for each new term-->
+
+</section>
+
+<section>
+
+  <h3>Basketball</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.basketball %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>Baseball</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.baseball %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>Tennis</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.tennis %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>General Sports Terms</h3>
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.general %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+
+  <h3>Other Sports Terminology</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.other %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>

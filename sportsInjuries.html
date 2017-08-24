@@ -1,0 +1,134 @@
+---
+layout: default
+head:
+  - name: concussion
+    description:  to concuss
+  - name: eye
+    description: eye injury
+  - name: jaw
+    description: jaw injury
+neck:
+  - name: clay shovelers
+    description:  clay shovelers
+  - name: atlas
+    description: to rudn
+  - name: odontoid
+    description: to jump
+chest:
+  - name: rib
+    description:  fracture
+  - name: pneumothorax
+    description: deflated lung
+  - name: breast
+    description: hematoma
+arm:
+  - name: shoulder
+    description:  dislocation
+  - name: elbow
+    description: tennis elbow
+  - name: wrist
+    description: gymnast
+abdomen:
+  - name: liver
+    description:  hematoma
+  - name: spleen
+    description: fracture
+  - name: appendix
+    description: take it out
+leg:
+  - name: hip
+    description:  labrum
+  - name: knee
+    description: ACL
+  - name: ankle
+    description: sprain
+---
+
+<section class="terms">
+
+  <h3>Head Injuries</h3>
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.head %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+    <!--this h4 and p will repeat for each new term-->
+    <!--I may put a youtube video under p for a video explaining terms-->
+
+</section>
+
+<section>
+
+  <h3>Neck Injuries</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.neck %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>Chest</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.chest %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>Upper Extremity</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.arm %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
+
+<section>
+
+  <h3>Abdomen/Pelvic Injuries</h3>
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.abdomen %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+</section>
+
+<section>
+
+  <h3>Lower Extremity</h3>
+
+  <!--terms in each section should be alphabetized-->
+    {% for term in page.leg %}
+    <h4>{{term.name}}</h4>
+    <!--how does a term linked in newsletter when clicked link into dictionary at term-->
+    <p>
+      {{term.description}}
+    </p>
+    {% endfor %}
+
+</section>
