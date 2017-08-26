@@ -2,136 +2,28 @@
 layout: default
 ---
 <!--add subscribe button to header-->
-
-<section class="grid">
-
-  <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-  </div>
-
+<section class="oldbanner">
+  <h1></h1>
 </section>
 
 <section class="grid">
+{% for post in site.posts %}
 
   <div class="col-4">
 
-      <h2>Heading of this Week's Blog</h2>
+      <h2>{{post.title}}</h2>
       <img src="http://lorempixel.com/400/200/sports/1"/>
       <!--this is the featured image-->
         <p>
-          a few sentences
+          {{post.excerpt | truncatewords: 50}}
         </p>
 
-      <button>read more...</button>
+      <a href="{post.url}" class="button"> Read More</a>
 
     </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
+{% endfor %}
 </section>
 
-<section class="grid">
-
-  <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-  </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-    <div class="col-4">
-
-      <h2>Heading of this Week's Blog</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
-      <!--this is the featured image-->
-        <p>
-          a few sentences
-        </p>
-
-      <button>read more...</button>
-
-    </div>
-
-</section>
-
+<!-- ASK TINA TO SEND ME INFO ON PAGINATION
 <button>MORE RECAPS...</button>
+-->

@@ -5,8 +5,18 @@
   border: 1px solid rgb(240,240,240);
 }
 
-header, footer, section {
+header{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+header, section {
   padding: 5%;
+}
+
+.container {
+  padding-top: 200px;
 }
 
 /*Universal Styles*/
@@ -56,6 +66,11 @@ h1, h2, h3, h4, h5{
 
 /*Blog of the Week Styles*/
 
+.blogoftheWeek {
+  padding: 4%;
+  margin: 1%
+}
+
 .blogoftheWeek h2{
   background-color: rgba(0, 99, 160, 0.72);
   text-transform: uppercase;
@@ -65,16 +80,152 @@ h1, h2, h3, h4, h5{
   letter-spacing: 2px;
 }
 
+.blogoftheWeek h3{
+  letter-spacing: 1px;
+}
+
+.blogoftheWeek p{
+  line-height: 2.0;
+}
+
 /**sidebar styles*/
+.sidebar {
+  padding: 3%;
+}
 
 .sidebar h2{
   background-color: rgba(0, 99, 160, 0.72);
   text-transform: uppercase;
   font-size: 35px;
   padding: 3%;
+  margin-top: 4%;
   text-align: center;
   letter-spacing: 2px;
 }
+
+.sidebar img{
+  border-radius: 50%;
+  margin: 5%;
+  max-width: 90%;
+}
+
+.sidebar p{
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+}
+
+.sidebar h3{
+  color: rgba(0, 99, 160, 0.72);
+  font-size: 25px;
+}
+
+.sidebar, .thetea p{
+  padding: 3%;
+  text-align: center;
+}
+
+/*this is my social media styles*/
+.socialMedia a{
+  color: rgba(0, 99, 160, 0.72);
+  font-size: 50px;
+  padding: 0 4% 0 4%
+}
+
+.socialMedia a:hover{
+  color: darkslategrey;
+}
+
+/*This is my sign up styles*/
+.signup{
+  border: 5px solid black;
+}
+
+.signup h3{
+  background-color: rgba(0, 99, 160, 0.72);
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 3%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+form input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding: 10%;
+  margin: 3%;
+}
+
+.button:hover{
+  background-color: rgba(0, 99, 160, 0.72);
+  color: white;
+
+}
+
+/*Footer Style*/
+footer h2{
+  text-align: center;
+}
+
+footer .myOtherWorks{
+  font-size: 25px;
+  background-color: rgba(0, 99, 160, 0.72);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .travelBlog{
+  background-image: url('../images/travelblog1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer .travelBlog:hover{
+  background-image: url('../images/travelblog2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+.travelBlog h2{
+  background-color:rgba(255, 255, 255, 0.5);
+}
+footer .podcast{
+  background-image: url('../images/podcast2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast h2{
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+footer .podcast:hover{
+  background-image: url('../images/podcast1.jpg');
+  background-position: bottom;
+}
+
+footer .socialMedia{
+  text-align: center;
+}
+
+
+/* newsletter styles */
+
+
 
 /*Burger menu*/
 
@@ -158,6 +309,4 @@ h1, h2, h3, h4, h5{
   .mob-hide{
     display: none;
   }
-
-
 }
