@@ -2,21 +2,27 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid rgb(240,240,240);
+  /*border: 1px solid rgb(240,240,240);*/
 }
 
 header{
   position: fixed;
   width: 100%;
   background-color: white;
+  border-bottom: solid black 6px;
+  padding: 2% 5%;
 }
 
-header, section {
+section {
   padding: 5%;
 }
 
 .container {
   padding-top: 200px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*Universal Styles*/
@@ -28,7 +34,24 @@ h1, h2, h3, h4, h5{
     font-family: 'Bitter', serif;
 }
 
+h3, h4 {
+  margin-top: 1em;
+}
+
+
 /*header section style*/
+
+/*signup styles*/
+/*.headersignup {
+  padding-left: 60%;
+}*/
+
+
+.logo, .img{
+  font-size: 30px;
+  padding-left: 10%;
+}
+
 .navLinks a{
   color: rgba(0, 99, 160, 0.72);
   font-size: 20px;
@@ -52,7 +75,7 @@ h1, h2, h3, h4, h5{
   background-image: url('../images/backgroundimage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  min-height: 60vh;
   background-position: center;
 }
 .bannerPic h1{
@@ -115,13 +138,27 @@ h1, h2, h3, h4, h5{
 }
 
 .sidebar h3{
-  color: rgba(0, 99, 160, 0.72);
+  color: black;
   font-size: 25px;
 }
 
 .sidebar, .thetea p{
   padding: 3%;
   text-align: center;
+}
+
+.thetea h4{
+  color: rgba(0, 99, 160, 0.72);
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 40px;
+  margin: 1% 0 1% 0;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.thetea p{
+  text-align: justify;
 }
 
 /*this is my social media styles*/
@@ -156,10 +193,25 @@ form input{
   margin: 3%;
 }
 
+.button {
+    padding: 10px 30px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 99, 160, 1);
+    border: 1px solid rgba(0, 99, 160, 1);
+    border-radius: 2px;
+}
+
 .button:hover{
   background-color: rgba(0, 99, 160, 0.72);
   color: white;
+  border: 1px solid white;
 
+}
+
+.twitterfeed {
+  width: 500px;
 }
 
 /*Footer Style*/
@@ -223,8 +275,53 @@ footer .socialMedia{
 }
 
 
-/* newsletter styles */
+/*archives Page styles*/
+.archives h1{
+  background-color: rgba(0, 99, 160, 0.72);
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: left;
+  padding: 6%;
+}
 
+.grid .read-more{
+  padding: 3%;
+}
+
+/*Sports Terminology Styles*/
+
+.terms{
+  border-bottom: solid black 6px;
+}
+
+.terms-heading h2{
+  background-color: rgba(0, 99, 160, 0.72);
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left;
+  padding: 3%;
+}
+
+.terms h3{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.terms h4{
+  color: rgba(0, 99, 160, 0.72);
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 40px;
+  margin: 3% 0 1% 0;
+}
+
+.terms p{
+  text-align: justify;
+}
+
+/*Sports Injuries Styles*/
 
 
 /*Burger menu*/
@@ -309,4 +406,15 @@ footer .socialMedia{
   .mob-hide{
     display: none;
   }
+
+  header {
+    border-bottom: 0px solid white;
+  }
+
+  .container {
+    padding-top: 35px;
+}
+
+.archives h1{
+  font-size: 12vw;
 }

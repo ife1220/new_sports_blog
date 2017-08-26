@@ -2,13 +2,13 @@
 layout: default
 football:
   - name: kick
-    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   - name: run
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   - name: jump
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   - name: peekaboo
-    description: can't talk Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 basketball:
   - name: kickb
     description:  to kick
@@ -46,22 +46,30 @@ other:
     description: to jump
 ---
 
+<div class="terms-heading grid">
+  <h2 class="col-12">Sports Terms</h2>
+</div>
+
+
 <section class="terms">
+
 
   <h3>Football</h3>
   <!--terms in each section should be alphabetized-->
     {% for term in page.football %}
-    <h4>{{term.name}}</h4>
+
+      <h4>{{term.name}}</h4>
     <!--how does a term linked in newsletter when clicked link into dictionary at term-->
-    <p>
+      <p>
       {{term.description}}
-    </p>
+      </p>
+
     {% endfor %}
-    <!--this h4 and p will repeat for each new term-->
+
 
 </section>
 
-<section>
+<section class="terms">
 
   <h3>Basketball</h3>
 
@@ -76,7 +84,7 @@ other:
 
 </section>
 
-<section>
+<section class="terms">
 
   <h3>Baseball</h3>
 
@@ -91,7 +99,7 @@ other:
 
 </section>
 
-<section>
+<section class="terms">
 
   <h3>Tennis</h3>
 
@@ -106,7 +114,7 @@ other:
 
 </section>
 
-<section>
+<section class="terms">
 
   <h3>General Sports Terms</h3>
   <!--terms in each section should be alphabetized-->
@@ -119,7 +127,7 @@ other:
     {% endfor %}
 </section>
 
-<section>
+<section class="terms">
 
   <h3>Other Sports Terminology</h3>
 

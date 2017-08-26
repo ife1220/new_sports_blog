@@ -2,17 +2,17 @@
 layout: default
 ---
 <!--add subscribe button to header-->
-<section class="oldbanner">
-  <h1></h1>
+<section class="archives">
+  <h1>Archives</h1>
 </section>
 
 <section class="grid">
 {% for post in site.posts %}
 
-  <div class="col-4">
+  <div class="col-4_sm-6_xs-12 read-more">
 
       <h2>{{post.title}}</h2>
-      <img src="http://lorempixel.com/400/200/sports/1"/>
+      <img src="/images/oldnewsletterimage.jpg"/>
       <!--this is the featured image-->
         <p>
           {{post.excerpt | truncatewords: 50}}

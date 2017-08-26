@@ -9,7 +9,7 @@ layout: default
 
   <div class="grid-spaceBetween">
 
-    <section class="col-8">
+    <section class="col-8_sm-12">
       <!--this is my newsletter section-->
       {% for post in site.posts limit:1 %}
       <div id="newsletter" class="blogoftheWeek">
@@ -22,7 +22,7 @@ layout: default
       </div>
     </section>
 
-    <section class="sidebar col-4">
+    <section class="sidebar col-4_sm-0_xs-0">
       <!--this is my sidebar section-->
       <div>
         <h2>About Me</h2>
@@ -34,7 +34,17 @@ layout: default
 
         <h3>About the Tea</h3>
         <p class="thetea">
-          Tea is another word for the gist. I'm all about clear and concise information and I'm here to provide you with what you need to know (the tea) about this week in sports.
+
+        <div class="thetea">
+          <h4>Tea</h4>
+
+          <p>
+            Another word for the gist.
+            I'm all about clear and concise information and I'm here to provide you with what you need to know (the tea) about this week in sports.
+          </p>
+
+        </div>
+
         </p>
 
       </div>
@@ -76,7 +86,7 @@ layout: default
 <!--End mc_embed_signup-->
     </section>
 
-    <section>
+    <section class="twitterfeed">
       <!--this is my twitter feed section-->
 
     <a class="twitter-timeline" data-height="500" href="https://twitter.com/thesensefullife">Tweets by thesensefullife</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
