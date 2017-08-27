@@ -42,14 +42,18 @@ h3, h4 {
 /*header section style*/
 
 /*signup styles*/
-/*.headersignup {
-  padding-left: 60%;
-}*/
+.headerform{
+  margin-top:-30px;
+}
+.headerform input{
+  padding: 0.5%;
+}
 
 
-.logo, .img{
-  font-size: 30px;
-  padding-left: 10%;
+img.logo{
+  width: 27%;
+  margin-top: -50px;
+  margin-left: 28%;
 }
 
 .navLinks a{
@@ -77,6 +81,7 @@ h3, h4 {
   background-size: cover;
   min-height: 60vh;
   background-position: center;
+  /*background-attachment: fixed;*/
 }
 .bannerPic h1{
   background-color: rgba(255, 255, 255, 0.5);
@@ -211,7 +216,7 @@ form input{
 }
 
 .twitterfeed {
-  width: 500px;
+  width: 750px;
 }
 
 /*Footer Style*/
@@ -250,6 +255,18 @@ footer .travelBlog:hover{
 .travelBlog h2{
   background-color:rgba(255, 255, 255, 0.5);
 }
+
+.travelBlog a{
+  color: black;
+  text-decoration: none;
+  padding: 10%;
+}
+
+.travelBlog a:hover{
+  color:rgba(0, 99, 160, 0.72);
+  transition: 2s;
+}
+
 footer .podcast{
   background-image: url('../images/podcast2.jpg');
   background-repeat: no-repeat;
